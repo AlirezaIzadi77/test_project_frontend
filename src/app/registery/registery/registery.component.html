@@ -1,0 +1,59 @@
+<body dir="rtl">
+<div>
+  <nz-row nzAlign="middle">
+    <nz-col nzSpan="12">
+      <img src="assets/2.jpg" id="image-registry">
+      <div id="form" nz-row nzJustify="center">
+        <form nz-form>
+         <div>
+           <nz-form-control>
+             <nz-input-group [nzSuffix]="temp1">
+               <ng-template #temp1><span><i class="bi bi-person-badge"></i></span></ng-template>
+               <input nz-input placeholder="نام و نشان">
+             </nz-input-group>
+           </nz-form-control>
+         </div>
+
+          <div>
+            <nz-form-control>
+              <nz-input-group [nzSuffix]="temp2">
+                <ng-template #temp2><span><i class="bi bi-person-add"></i></span></ng-template>
+                <input nz-input placeholder="نام کاربری">
+              </nz-input-group>
+            </nz-form-control>
+          </div>
+
+          <div>
+            <nz-form-control>
+              <nz-input-group [nzSuffix]="temp3">
+                <ng-template #temp3><span><i class="bi bi-key-fill"></i></span></ng-template>
+                <input nz-input placeholder="رمز عبور">
+              </nz-input-group>
+            </nz-form-control>
+          </div>
+
+          <div>
+            <nz-form-control>
+              <nz-input-group [nzSuffix]="temp4">
+                <ng-template #temp4><span><i class="bi bi-key-fill"></i></span></ng-template>
+                <input nz-input placeholder="تکرار رمز عبور">
+              </nz-input-group>
+            </nz-form-control>
+          </div>
+
+          <button nz-button nzType="primary">ثبت</button>
+        </form>
+      </div>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <div id="login-image-bg">
+        <div>
+          <img src="../../assets/login_clipdrop-background-removal.png">
+        </div>
+      </div>
+    </nz-col>
+  </nz-row>
+</div>
+</body>
+
+
