@@ -1,0 +1,40 @@
+<body dir="rtl">
+<div>
+  <nz-row>
+    <nz-col nzSpan="12">
+      <img src="assets/1" id="image-registry">
+      <div id="form" nz-row nzJustify="center">
+        <form nz-form>
+          <div>
+            <nz-form-control>
+              <nz-input-group [nzSuffix]="temp1">
+                <ng-template #temp1><span><i class="bi bi-person"></i></span></ng-template>
+                <input nz-input placeholder="نام کاربری">
+              </nz-input-group>
+            </nz-form-control>
+          </div>
+          <div>
+            <nz-form-control>
+              <nz-input-group [nzSuffix]="temp2">
+                <ng-template #temp2><span><i class="bi bi-key-fill"></i></span></ng-template>
+                <input nz-input placeholder="رمز عبور">
+              </nz-input-group>
+            </nz-form-control>
+          </div>
+          <p [routerLink]="['/registry']">ایجاد حساب کاربری جدید</p>
+          <p [routerLink]="['']" style="float: left">بازنشانی رمز عبور</p>
+          <button nz-button nzType="primary">ورود به سامانه</button>
+        </form>
+      </div>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <div id="login-image-bg">
+        <div>
+          <img src="../../assets/login_clipdrop-background-removal.png">
+        </div>
+      </div>
+    </nz-col>
+  </nz-row>
+</div>
+</body>
+
